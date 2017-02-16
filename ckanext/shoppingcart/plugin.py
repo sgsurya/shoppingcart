@@ -12,7 +12,7 @@ class ShoppingcartPlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('fanstatic', 'shoppingcart')
-        toolkit.add_public_directory(config_,'theme/public')
+        toolkit.add_public_directory(config_,'templates/theme')
     
     def after_map(self, map):
         controller = 'ckanext.shoppingcart.plugin:controller'
